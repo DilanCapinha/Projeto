@@ -49,6 +49,4 @@ Esse projeto está sob a licença MIT.
 
 ---
 
-Feito por Dilan Capinha 👋 
-
-
+Feito por Dilan Capinha 👋
