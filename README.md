@@ -19,7 +19,7 @@
 <br>
 
 <p align="center">
-  <img alt="projeto DevLinks" src=".github/cover.png" width="100%">
+  <img src="./cover.png"> <width="100%">
 </p>
 
 ## 🚀 Tecnologias
@@ -50,6 +50,5 @@ Esse projeto está sob a licença MIT.
 ---
 
 Feito por Dilan Capinha 👋 
-
 
 
