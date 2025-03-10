@@ -8,25 +8,25 @@
   --text-color: white;
   --bg-url: url(./assets/bg-mobile.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
-  --surface-color:rgba(255, 255, 255, 0.05);
-  --surface-color-hover:rgba(255, 255, 255, 0.02);
-  --highlight-color: rgba(255, 255, 255, 0.2); 
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-color-hover: rgba(255, 255, 255, 0.02);
+  --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(./assets/moon-stars.svg);
 }
 
 .light {
-    --text-color: black;
-    --bg-url: url(./assets/bg-mobile-light.jpg);
-    --stroke-color: rgba(0, 0, 0, 0.5);
-    --surface-color:rgba(0, 0, 0, 0.05);
-    --surface-color-hover:rgba(0, 0, 0, 0.02);
-    --highlight-color: rgba(0, 0, 0, 0.1);
-    --switch-bg-url: url(./assets/sun.svg);
-  }
-
+  --text-color: black;
+  --bg-url: url(./assets/bg-mobile-light.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(0, 0, 0, 0.1);
+  --switch-bg-url: url(./assets/sun.svg);
+}
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 body * {
   font-family: "Inter", sans-serif;
@@ -73,11 +73,10 @@ body * {
   left: 0;
   z-index: 1;
   transform: translateY(-50%);
-
 }
 .light #switch button {
- right: 0;
- left: initial;
+  right: 0;
+  left: initial;
 }
 #switch span {
   display: block;
@@ -90,10 +89,7 @@ body * {
   -webkit-backdrop-filter: blur(4px);
   border-radius: 9999px;
   left: 0;
-
-
 }
-
 
 /* links */
 ul {
@@ -116,7 +112,7 @@ ul li a {
   -webkit-backdrop-filter: blur(4px);
   text-decoration: none;
   font-weight: 500;
-height: 52px;
+  height: 52px;
 
   transition: background all 0.2;
 }
@@ -141,9 +137,8 @@ ul li a:hover {
   padding: 24px 0;
   font-size: 24px;
 }
-#social-links a:hover{
-  background: var(--highlight-color)
-  
+#social-links a:hover {
+  background: var(--highlight-color);
 }
 
 footer {
@@ -151,4 +146,13 @@ footer {
   font-size: 14px;
   padding: 24px 0;
 }
+/* media queries*/
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
 
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
